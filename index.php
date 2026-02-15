@@ -28,11 +28,6 @@
             <input type="tel" name="percentage" value="<?= $percentage ?>" disabled>
             </div>
         </form>
-        <script>
-            window.onload = function() {
-                document.getElementById("myForm").reset();
-            };
-        </script>
     </main>
 </body>
 </html>
