@@ -9,8 +9,8 @@
 </head>
 <body>
     <?php
-        $howMuch = $_POST['howMuchIs'] ?? 1;
-        $ofTheValue = $_POST['of'] ?? 5;
+        $howMuch = $_POST['howMuchIs'] ?? 0;
+        $ofTheValue = $_POST['of'] ?? 0;
         $percentage = 0;
     ?>
     <main>
@@ -28,7 +28,11 @@
             <input type="tel" name="percentage" value="<?= $percentage ?>" disabled>
             </div>
         </form>
+        <script>
+            window.onload = function() {
+                document.getElementById("myForm").reset();
+            };
+        </script>
     </main>
-    
 </body>
 </html>
